@@ -1,0 +1,57 @@
+.namber {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transform: rotate(var(--rotate));
+	--rotate: 0;
+}
+
+.s1 {
+	--rotate: 30deg;
+}
+
+.s2 {
+	--rotate: 60deg;
+}
+
+.s3 {
+	--rotate: 90deg;
+}
+
+.s4 {
+	--rotate: 120deg;
+}
+
+
+.s5 {
+	--rotate: 150deg;
+}
+
+.s6 {
+	--rotate: 180deg;
+}
+
+.s7 {
+	--rotate: 210deg;
+}
+
+.s8 {
+	--rotate: 240deg;
+
+}
+
+.s9 {
+	--rotate: 270deg;
+}
+
+.s10 {
+	--rotate: 300deg;
+}
+
+.s11 {
+	--rotate: 330deg;
+}
