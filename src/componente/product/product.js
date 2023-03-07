@@ -1,5 +1,4 @@
 import './product.css'
-import { useEffect, useState } from "react";
 
 function Namber() {
 	
