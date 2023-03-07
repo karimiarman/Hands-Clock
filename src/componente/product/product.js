@@ -2,10 +2,7 @@ import './product.css'
 import { useEffect, useState } from "react";
 
 function Namber() {
-	const [secs, setSec] = useState();
-	const [smin, setMin] = useState();
-	const [sHou, setHou] = useState()
-
+	
 	useEffect(() => {
 		function setTime() {
 			const sec = document.querySelector('.sec');
@@ -15,11 +12,10 @@ function Namber() {
 			const timeSecn = time.getSeconds() / 60;
 			const timeMenit = (timeSecn + time.getMinutes()) / 60;
 			const timeHours = (timeMenit + time.getHours()) / 12;
-			setSec(sec.style.setProperty('--rotates', timeSecn))
-			setMin(min.style.setProperty('--rotates', timeMenit))
-			setHou(hou.style.setProperty('--rotates', timeHours))
+			sec.style.setProperty('--rotates', timeSecn)
+			min.style.setProperty('--rotates', timeMenit)
+			hou.style.setProperty('--rotates', timeHours)
 		}
-		setInterval(setTime, 1000)
 		setTime()
 	}, [])
 
